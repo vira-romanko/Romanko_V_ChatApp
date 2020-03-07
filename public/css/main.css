@@ -1,2 +1,213 @@
-*{margin:0;padding:0;box-sizing:border-box}html,body{height:100%}body{font:16px Helvetica, Arial}main{display:flex;height:100%;flex-direction:row}.form-container,.messages{padding:20px}.form-container{flex:1;border:6px solid #bfcfd6;background-color:#e3edf1}.form-container label{display:block;margin-bottom:0.5rem}.messages{flex:2;background-color:#eee;border:6px solid #e2e0e0}input,textarea{display:block;width:100%;border:2px solid #bfcfd6;border-radius:4px;font-size:0.8rem;padding:0.4rem;border-style:solid}textarea{height:135px}form{padding:3px;margin:12px auto}form input[type=submit]{width:auto;padding:10px;background-color:#4bc811;margin-top:1rem;border-radius:8px;color:white;cursor:pointer;text-transform:uppercase;font-weight:bold}#messages{list-style-type:none;margin:0;padding:0}#messages li{padding:5px 10px}#messages li:nth-child(odd){background:#eee}.new-message{width:45%;padding:8px 12px;background-color:white;border-radius:8px;margin-bottom:1rem;float:left;clear:both}.new-message span{font-size:0.8rem;display:block;margin-bottom:2px}.my-message{float:right !important;background-color:#86bf9d;color:white}
+@import url("https://fonts.googleapis.com/css?family=Nunito:200,400,700,700i,900&display=swap");
+.chat-box p {
+  display: block; }
+.chat-box .new-message {
+  display: block;
+  display: block;
+  width: 50%;
+  height: 100%;
+  padding: 8px 12px;
+  background-color: white;
+  margin-bottom: 1rem;
+  box-shadow: -5px 11px 17px -1px rgba(214, 207, 207, 0.51);
+  border-radius: 20px;
+  float: left;
+  clear: both;
+  color: #D6CFCF; }
+  .chat-box .new-message span {
+    font-size: 0.8rem;
+    display: block;
+    margin-bottom: 2px; }
+.chat-box .my-message {
+  float: right !important;
+  font-family: "Nunito", sans-serif;
+  background-color: #91B9BA;
+  padding: 20px;
+  height: auto;
+  color: white;
+  box-shadow: -5px 11px 17px -1px rgba(214, 207, 207, 0.51);
+  border-radius: 20px; }
+
+html {
+  font-family: "Nunito", sans-serif; }
+
+.login {
+  background-image: url("/images/koala_login.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  font-family: "Nunito", sans-serif; }
+  .login .login-form input[type="password"],
+  .login .login-form input[type="text"] {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ffffff;
+    margin-bottom: 15px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    outline: 0;
+    color: #D6CFCF;
+    font-size: 15px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    box-shadow: -5px 11px 17px -1px rgba(214, 207, 207, 0.51); }
+  .login .login-form button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    font-size: 25px;
+    border-radius: 50px;
+    background-color: #91B9BA;
+    border: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-weight: bold;
+    color: #ffffff;
+    box-shadow: -5px 11px 17px -1px rgba(214, 207, 207, 0.51);
+    outline: none; }
+  .login object {
+    max-width: 500px; }
+  .login img {
+    margin: 0 auto; }
+
+.login-form {
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 100px; }
+  .login-form h1 {
+    text-align: center;
+    color: #D6CFCF;
+    font-size: 3rem;
+    font-family: "Nunito", sans-serif;
+    font-weight: 900;
+    padding: 20px 0 20px 0; }
+  .login-form h2 {
+    color: #D6CFCF;
+    text-align: center;
+    font-weight: 700; }
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html, body {
+  height: 100%; }
+
+body {
+  font-family: "Nunito", sans-serif; }
+
+main {
+  display: flex;
+  height: 100%;
+  flex-direction: column; }
+
+.form-container, .messages {
+  padding: 20px; }
+
+.form-container {
+  flex: 5;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/images/green_bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+  .form-container .koala-avatar {
+    text-align: center;
+    display: flex;
+    margin: 0 auto;
+    padding: 30px; }
+  .form-container input {
+    color: white;
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: transparent;
+    border: transparent;
+    text-align: center; }
+    .form-container input::placeholder {
+      color: white;
+      font-family: "Nunito", sans-serif;
+      font-size: 20px;
+      font-weight: 700; }
+
+.messages {
+  flex: 3;
+  width: 100%;
+  height: 80vh;
+  perspective: 1px;
+  overflow-x: hidden;
+  overflow-y: auto; }
+
+input, textarea {
+  display: block;
+  width: 100%;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  padding: 0.4rem;
+  outline: none; }
+
+textarea {
+  height: 100px;
+  outline: 0;
+  border: transparent;
+  padding: 30px; }
+  textarea::placeholder {
+    color: #91B9BA;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: "Nunito", sans-serif; }
+
+.home-form {
+  border-radius: 50px;
+  width: 100%;
+  position: sticky;
+  box-shadow: -5px 11px 17px 11px rgba(214, 207, 207, 0.51);
+  padding: 3px;
+  margin: 12px auto; }
+  .home-form form {
+    display: flex;
+    flex-direction: row;
+    outline: none; }
+  .home-form button {
+    background-color: transparent;
+    outline: 0;
+    border: transparent;
+    float: right;
+    margin: 20px;
+    cursor: pointer; }
+
+.text-typing {
+  color: #F2D9D0;
+  margin-left: 20px;
+  font-size: 18px; }
+
+#messages {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+  #messages li {
+    padding: 5px 10px; }
+  #messages li:nth-child(odd) {
+    background: #eee; }
+
+.nav-form {
+  margin-top: 50px;
+  margin-bottom: -20px;
+  position: sticky;
+  z-index: 1;
+  background-color: white;
+  box-shadow: -5px 11px 17px 11px rgba(214, 207, 207, 0.51);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border-radius: 50px;
+  padding: 40px; }
+  .nav-form a {
+    border-color: transparent;
+    background-color: transparent; }
+    .nav-form a:hover {
+      border-bottom: 3px solid #91B9BA; }
+
 /*# sourceMappingURL=main.css.map */

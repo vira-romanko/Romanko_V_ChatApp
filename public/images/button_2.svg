@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="41.134" height="41.876" viewBox="0 0 41.134 41.876">
+  <g id="chat" transform="translate(-3.656)">
+    <path id="Path_22" data-name="Path 22" d="M24.276,0A20.677,20.677,0,0,0,3.656,20.62a20.143,20.143,0,0,0,1.431,7.474,20.054,20.054,0,0,0,2.968,5.195L5.14,40.074a1.27,1.27,0,0,0,1.219,1.8h.212l10.814-1.908a19.429,19.429,0,0,0,6.785,1.166A20.567,20.567,0,0,0,24.276,0Z" transform="translate(0)" fill="#eac7ba"/>
+    <g id="Group_2" data-name="Group 2" transform="translate(9.911 17.015)">
+      <path id="Path_23" data-name="Path 23" d="M69.281,167.706a3.976,3.976,0,1,0,3.976,3.976A4,4,0,0,0,69.281,167.706Z" transform="translate(-65.305 -167.706)" fill="#d18f76"/>
+      <path id="Path_24" data-name="Path 24" d="M175.655,171.682a3.976,3.976,0,1,0-3.976,3.976A4,4,0,0,0,175.655,171.682Z" transform="translate(-157.315 -167.706)" fill="#d18f76"/>
+      <path id="Path_25" data-name="Path 25" d="M270.105,171.682a3.976,3.976,0,1,0,3.976-3.976A4,4,0,0,0,270.105,171.682Z" transform="translate(-249.326 -167.706)" fill="#d18f76"/>
+    </g>
+  </g>
+</svg>

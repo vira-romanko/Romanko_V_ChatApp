@@ -1,0 +1,75 @@
+.login{
+	background-image: url('/images/koala_login.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+    //background-clip: initial;
+	background-position-x: center;
+	font-family: $font;
+	.login-form input[type="password"],
+		.login-form input[type="text"] {
+			width: 100%;
+			padding: 20px;
+			border: 1px solid #ffffff;
+			margin-bottom: 15px;
+			border-radius: 50px;
+			box-sizing:border-box;
+			outline: 0;
+			color: $gray;
+			font-size: 15px;
+			font-family: $font;
+			font-weight: 700;
+			box-shadow: -5px 11px 17px -1px rgba(214,207,207,0.51);
+		}
+		.login-form button[type="submit"] {
+			
+			width: 100%;
+			padding: 15px;
+			font-size: 25px;
+			border-radius: 50px;
+			background-color:$green;
+			border: 0;
+			box-sizing: border-box;
+			cursor: pointer;
+			font-weight: bold;
+			color: #ffffff;
+			box-shadow: -5px 11px 17px -1px rgba(214,207,207,0.51);
+			outline: none;
+		}
+
+		object{
+			max-width: 500px;
+			
+		}
+
+		img{
+			margin: 0 auto;
+			
+		}	
+	
+}
+		.login-form {
+			width: 300px;
+			margin: 0 auto;
+			margin-top: 100px;
+			
+		
+		h1 {
+			text-align: center;
+			color: $gray;
+			font-size: 3rem;
+			font-family: $font;
+			font-weight: 900;
+			padding: 20px 0 20px 0;
+		}
+
+		h2{
+			color: $gray;
+			text-align: center;
+			font-weight: 700;
+		}
+        
+     
+	}
+		
+      
+		
