@@ -1,12 +1,12 @@
 # Cool Koala Chat App
 
 ## Share your thoughts
-This is an online real-time Chat Application.You can send messages to the large amount of people just like you would in the group chat. You can share your nickname or stay incognito.Why Koala? Because they are  awesome animals that suffered from massive Australian fire in Jan 2020. 
+This is an online real-time Chat Application. You can send messages to the large amount of people just like you would in the group chat. You can share your nickname or stay incognito. Why Koala? Because they are  awesome animals that suffered from a massive Australian fire in Jan 2020. 
 ## Log in
 To log in type your username and password.
 Log in credentials for test user:
-**Username**:Trevor
-**Password**:123
+ * **Username**:Trevor
+ * **Password**:123
 ![Image description](public/images/mockup_github_1.jpg)
 
 
