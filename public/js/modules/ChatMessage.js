@@ -4,17 +4,20 @@
 export default {
     props: ['msg'],
     template: `
+   <div class="chat-box">
    
-    <p  :class="{ 'my-message' : matchedID}" class="new-message" >
+    <div class="new-message" v-bind:class="{ 'my-message' : matchedID}" >
     <span>{{ msg.message.name }} says:</span>
-    {{ msg.message.content}}
-    </p>
-   
+    <p>{{ msg.message.content}}</p>
+    </div>
+   </div>
     `,
     data: function(){
         return {
             message: "hello from the template",
             matchedID: this.$parent.socketID == this.msg.id
+            
+
         };
     }
 

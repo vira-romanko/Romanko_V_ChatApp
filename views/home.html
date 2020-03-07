@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Koala talk</title>
+	<link rel="stylesheet" href="css/main.css">
+	<script src="https://unpkg.com/vue"></script>
+</head>
+
+<body>
+	<main id="app">
+		<!-- <h1>Welcome to the Koala app</h1> -->
+		
+		<section class="form-container">
+           <img class="koala-avatar" src="/images/koala.svg" alt="koala"/>
+			<!-- <label for="nickname"> Nickname</label> -->
+			<input  v-model='nickname' type="text" id="nickname" class="nickname" placeholder="Type cool nickname here">
+
+			<div class="nav-form">
+			  <a href="/home"><img src="/images/button_1.svg" alt="button 1"/></a>
+			  <a href="/room"><img src="/images/button_2.svg" alt="button 1"/></a>
+			  <a  href="/logout"><img src="/images/button_3.svg" alt="button 1"/></a>
+			</div>
+
+		
+      
+      
+		</section>
+
+		<section class="messages">
+			<ul id="messages">
+				<!-- render a new message component for every message -->
+				<newmessage v-for="message in messages" :msg="message">
+
+				</newmessage>
+			</ul>
+		</section>
+		<p v-if="typing" class="text-typing">{{typing}} is typing...</p>
+       <div class="home-form">
+		<form>
+			<!-- <label for="message">Have something on your mind?</label> -->
+			<textarea  v-model="message" class="message" type="text" autocomplete="off" id="textarea" placeholder="Type something"></textarea>
+			<button @click.prevent="dispatchMessage" type="submit" ><img src="images/send_errow.svg" alt="send"/></button>
+			<!-- <input @click.prevent="dispatchMessage" type="submit"> -->
+		</form>
+	</div>
+
+	</main>
+	<script src="/socket.io/socket.io.js"></script>
+	<script type="module" src="js/main_vm.js"></script>
+</body>
+
+</html>

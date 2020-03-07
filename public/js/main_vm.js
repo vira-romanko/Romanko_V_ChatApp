@@ -24,9 +24,26 @@ const vm = new Vue({
         socketID: "",
         message: "",
         nickname: "",
-        messages:[]    
+        messages:[],
+        typing: false   
         
     },
+
+    watch: {
+        message(value) {
+          value ? socket.emit('typing', this.nickname) : socket.emit('stoptyping');
+        }
+      },
+    
+      created() {
+        socket.on('typing', (data) => {
+          console.log(data);
+          this.typing = data || 'Anonymous';
+        });
+        socket.on('stoptyping', () => {
+          this.typing = false;
+        });
+      },
 
     methods:{
         //emit a message event to the server so that is 
@@ -44,7 +61,10 @@ const vm = new Vue({
             this.message="";
 
 
-        }
+        },
+        isTyping() {
+            socket.emit('typing', this.nickname);
+          },
     },
     mounted: function(){
         console.log('vue is done mounting');

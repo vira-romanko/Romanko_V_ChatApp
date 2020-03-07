@@ -1,18 +1,36 @@
-.new-message { 
-    span { font-size: 0.8rem; display: block; margin-bottom: 2px; }
+.chat-box{
 
-    width: 45%;
+    p{
+        display: block;
+        //padding: 40px;
+    }  
+  
+
+.new-message { 
+    display: block; 
+    span { font-size: 0.8rem; display: block; margin-bottom: 2px; }
+    display: block;
+    width: 50%;
+    height: 100%;
     padding: 8px 12px;
     background-color: white; 
-    border-radius: 8px;
+    //border-radius: 8px;
     margin-bottom: 1rem;
-
+    box-shadow: -5px 11px 17px -1px rgba(214,207,207,0.51);
+    border-radius: 20px;
     float:left;
     clear: both;
+    color: #D6CFCF;
 }
 
 .my-message {
     float: right !important;
-    background-color: #86bf9d;
+    font-family: $font;
+    background-color:$green;
+    padding: 20px;
+    height: auto;
     color: white;
+    box-shadow: -5px 11px 17px -1px rgba(214,207,207,0.51);
+    border-radius: 20px;
+}
 }
